@@ -1,4 +1,4 @@
-# User Authentication System
+# NodeJS Exercise : User Authentication System
 
 A simple Node.js application for user registration and login functionality using **Node**, **Express**, **MongoDB**, and **Mongoose**.
 
