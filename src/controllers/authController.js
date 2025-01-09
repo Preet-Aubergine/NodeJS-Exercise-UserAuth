@@ -1,6 +1,12 @@
+/* Module Dependencies */
 const authService = require('../services/authService');
 
-// Register Controller
+/* Register Controller :
+  
+ - @param {Object} req - The request object.
+ - @param {Object} res - The response object.
+ - @returns {Promise<void>} - A promise that resolves to void.
+*/
 const register = async (req, res) => {
     const { username, email } = req.body;
 
@@ -16,7 +22,12 @@ const register = async (req, res) => {
     }
 };
 
-// Login Controller
+/* Login Controller :
+  
+ - @param {Object} req - The request object.
+ - @param {Object} res - The response object.
+ - @returns {Promise<void>} - A promise that resolves to void.
+*/
 const login = async (req, res) => {
     const { username, email } = req.body;
 

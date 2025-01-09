@@ -1,5 +1,12 @@
+/* Module Dependencies */
 const mongoose = require('mongoose');
 
+/* User schema definition :
+  
+ - @typedef {Object} User
+ - @property {string} username - The username of the user. Must be unique and contain only alphanumeric characters.
+ - @property {string} email - The email of the user. Must be in a valid email format.
+*/
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -21,6 +28,10 @@ const userSchema = new mongoose.Schema({
     },
 });
 
+/* User model :
+ 
+ - @type {mongoose.Model<User>}
+*/
 const User = mongoose.model('User', userSchema);
 
 module.exports = User;
